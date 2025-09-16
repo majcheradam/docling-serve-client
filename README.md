@@ -12,15 +12,15 @@ Type-safe TypeScript SDK for [docling-serve](https://github.com/docling-project/
 ## Installation
 
 ```bash
-bun add @docling/serve-client
+bun add docling-serve-client
 # or
-npm install @docling/serve-client
+npm install docling-serve-client
 ```
 
 ## Quick start
 
 ```ts
-import { createDoclingServeClient } from "@docling/serve-client";
+import { createDoclingServeClient } from "docling-serve-client";
 
 const client = createDoclingServeClient({
   baseUrl: "https://docling.example.com",
@@ -43,7 +43,7 @@ console.log(conversion.data[0]?.doc_id);
 ### Uploading files
 
 ```ts
-import { DoclingServeClient } from "@docling/serve-client";
+import { DoclingServeClient } from "docling-serve-client";
 import { file } from "bun"; // Bun helper to read as File
 
 const client = new DoclingServeClient({ baseUrl: "http://localhost:8000" });

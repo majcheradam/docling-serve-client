@@ -2,7 +2,7 @@
   "lockfileVersion": 1,
   "workspaces": {
     "": {
-      "name": "@docling/serve-client",
+      "name": "docling-serve-client",
       "dependencies": {
         "openapi-fetch": "^0.9.3",
       },

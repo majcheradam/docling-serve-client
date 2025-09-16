@@ -1,5 +1,5 @@
 {
-  "name": "@docling/serve-client",
+  "name": "docling-serve-client",
   "version": "0.1.0",
   "description": "Type-safe SDK for docling-serve.",
   "license": "MIT",
