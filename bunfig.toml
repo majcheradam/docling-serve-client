@@ -1,0 +1,6 @@
+[install]
+# Keep lockfile so publishing remains reproducible
+saveTextLockfile = true
+
+[test]
+preload = []

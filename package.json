@@ -1,0 +1,53 @@
+{
+  "name": "@docling/serve-client",
+  "version": "0.1.0",
+  "description": "Type-safe SDK for docling-serve.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/docling-project/docling-serve-client.git"
+  },
+  "bugs": {
+    "url": "https://github.com/docling-project/docling-serve-client/issues"
+  },
+  "homepage": "https://github.com/docling-project/docling-serve-client#readme",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": ["dist", "README.md", "LICENSE"],
+  "engines": {
+    "bun": ">=1.0.0",
+    "node": ">=18.17"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "packageManager": "bun@1.2.21",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "generate": "bunx openapi-typescript schema/openapi.json --output src/generated/docling-serve.ts",
+    "lint": "biome check .",
+    "prepublishOnly": "bun run clean && bun run build"
+  },
+  "keywords": ["docling", "sdk", "openapi", "bun"],
+  "dependencies": {
+    "openapi-fetch": "^0.9.3"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.7.1",
+    "openapi-typescript": "^6.7.1",
+    "tsup": "^8.0.1",
+    "typescript": "^5.4.5"
+  }
+}
