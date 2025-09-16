@@ -1,6 +1,6 @@
 # docling-serve-client
 
-Type-safe TypeScript SDK for [docling-serve](https://github.com/docling-project/docling-serve) with first-class Bun support. The client is generated from the official OpenAPI schema and wraps every endpoint with a small, DX-focused API surface.
+Type-safe TypeScript SDK for [docling-serve](https://github.com/docling-project/docling-serve), the open-source OCR and document conversion API that turns PDFs, Office docs, and images into richly structured Markdown, JSON, or zipped assets. This client is generated from the official OpenAPI schema and wraps every endpoint with a small, DX-focused API surface.
 
 ## Highlights
 - 📦 Ready for publishing to npm (ESM + CJS bundles with declarations)
